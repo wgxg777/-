@@ -1,0 +1,87 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "看电影",
+				"app-plus": {
+					"titleNView": false
+
+				},
+				"enablePullDownRefresh":true
+				// "titleNView":{
+				//          "searchInput":{
+				//              "align":"center",
+				//              "backgroundColor":"#ccc",
+				//              "borderRadius":"2px",
+				//              "placeholder":"搜索大全",
+				//              "placeholderColor":"#fff",
+				//              "disabled":true
+				//          }
+				//      }
+
+
+
+			}
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/video/video",
+			"style": {}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				
+				}
+				// "titleNView": {
+				// 	"searchInput": {
+				// 		"align": "left",
+				// 		"backgroundColor": "#fff",
+				// 		"borderRadius": "4px",
+				// 		"placeholder": "搜索大全",
+				// 		"placeholderColor": "#000000",
+				// 		"disabled": false
+				// 	},
+				// 	// 左右按钮配置
+				// 	"buttons": [
+				// 		// 左边
+
+				// 		// 右边
+				// 		{
+				// 			"color": "#000000",
+				// 			"colorPressed": "pink",
+				// 			"float": "right",
+				// 			"fontSize": "14px", //按钮上文字的大小
+				// 			"text": "搜索"
+
+				// 		}
+				// 	]
+				// }
+			}
+		}
+	    ,{
+            "path" : "pages/searchDetail/searchDetail",
+            "style" : {
+				"app-plus": {
+					"titleNView": false
+				
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
